@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:text="@string/app_name"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/icon_gasolina"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/gasolina"/>
+
+    <EditText
+        android:id="@+id/preco_gasolina"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Preço da Gasolina"
+        android:nextFocusForward="@id/preco_etanol"
+        android:gravity="center"
+        android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/icon_etanol"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/etanol"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/preco_etanol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Preço do Etanol"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:nextFocusForward="@id/btn_comparar"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_comparar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/comparar"
+        android:background="#2196F3"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"/>
+
+</LinearLayout>
