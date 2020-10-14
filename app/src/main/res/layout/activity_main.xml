@@ -73,6 +73,14 @@
         android:nextFocusForward="@id/btn_comparar"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        >
+
     <Button
         android:id="@+id/btn_comparar"
         android:layout_width="wrap_content"
@@ -82,10 +90,26 @@
         android:background="#2196F3"
         android:textAllCaps="true"
         android:textSize="30dp"
-        android:padding="15dp"
+        android:padding="10dp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         />
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/clear"
+        android:textAlignment="center"
+        android:background="#FF0000"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/result"
