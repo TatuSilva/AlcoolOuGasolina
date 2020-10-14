@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Etanol ou Gasolina?</string>
-    <string name="comparar">Comparar</string>
-    <string name="clear">clear</string>
+    <string name="comparar">COMPARAR</string>
+    <string name="clear">LIMPAR</string>
+    <string name="resultado">Resultado</string>
+    <string name="preco_do_etanol">Preço do Etanol</string>
+    <string name="preco_da_gasolina">Preço da Gasolina</string>
 </resources>

@@ -21,7 +21,7 @@
         android:text="@string/app_name"
         android:textAllCaps="true"
         android:textColor="@color/textColor"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -43,9 +43,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:hint="Preço da Gasolina"
+            android:hint="@string/preco_da_gasolina"
             android:inputType="numberDecimal"
-            android:nextFocusForward="@id/preco_etanol" />
+            android:nextFocusForward="@id/preco_etanol"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:hint="Preço do Etanol"
+            android:hint="@string/preco_do_etanol"
             android:inputType="numberDecimal"
             android:nextFocusForward="@id/btn_comparar" />
     </LinearLayout>
@@ -86,12 +87,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="20dp"
-            android:background="#2196F3"
+            app:backgroundTint="#2196F3"
             android:padding="10dp"
             android:text="@string/comparar"
             android:textAllCaps="true"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor= "@color/black"
+            style = "@style/Widget.MaterialComponents.Button"/>
 
         <Button
             android:id="@+id/btn_clear"
@@ -99,13 +102,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:background="#FF0000"
             android:padding="10dp"
             android:text="@string/clear"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor= "@color/textColor"
+            app:backgroundTint="#FF0000"
+            app:elevation="10dp"
+            style = "@style/Widget.MaterialComponents.Button" />
 
     </LinearLayout>
 
@@ -113,6 +119,8 @@
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"/>
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/resultado"/>
 
 </LinearLayout>
