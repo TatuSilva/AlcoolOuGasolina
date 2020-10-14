@@ -60,7 +60,8 @@ class MainActivity() : AppCompatActivity() {
                 }else Toast.makeText(this, "Insira valores válidos", Toast.LENGTH_LONG).show()
 
             } catch (ex: Exception) {
-                Toast.makeText(this, "Catch", Toast.LENGTH_LONG).show()
+                result.visibility = View.INVISIBLE
+                Toast.makeText(this, "Insira valores válidos", Toast.LENGTH_LONG).show()
             }
         }
 
@@ -68,7 +69,7 @@ class MainActivity() : AppCompatActivity() {
                 try {
                     clear()
                 } catch (ex: Exception) {
-                    Toast.makeText(this, "Deu ruim", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Ih... Deu ruim... :/", Toast.LENGTH_LONG).show()
                 }
             }
 
