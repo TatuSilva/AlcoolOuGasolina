@@ -38,7 +38,7 @@ class MainActivity() : AppCompatActivity() {
             }
 
             fun calculo(): Boolean {
-                return valorEtanol.toDouble() / valorGasolina.toDouble() < 0.7
+                return valorEtanol.toDouble() / valorGasolina.toDouble() > 0.7
                 }
 
             fun useEtanol() {
